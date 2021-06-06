@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar{
+	background-color: rgb(0, 0, 0);
+color:white;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+QMenu{
+font: 12pt &quot;arial black&quot;;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{ 
+	background-color:black;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_top">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QFrame" name="frame_trolle">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/menu-toggle.png</normaloff>icon/menu-toggle.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_top1">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_janela">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>4100000</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QPushButton" name="bt_exit">
+               <property name="minimumSize">
+                <size>
+                 <width>85</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>150</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="baseSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:hover{
+width:300px;
+	height:100px;
+	border-radius: 6px;
+	background-color: rgb(255, 0, 127);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/CLOS3.png</normaloff>icon/CLOS3.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>50</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(97, 97, 97);</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="inicial">
+          <widget class="QPushButton" name="Bt_venda">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>50</y>
+             <width>311</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ff007f;&quot;&gt;TELA VENDA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border-radius: 65%;
+border: solid 10px;
+border-color: rgb(0, 0, 0);
+border-width: medium;
+ 	
+background-color: rgb(162, 162, 162);
+}
+QPushButton:hover{
+border :5px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>VENDAS</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/venda-rapida.png</normaloff>icon/venda-rapida.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Bt_estoque">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>50</y>
+             <width>311</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ff007f;&quot;&gt;CADASTRO - ESTOQUE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border-radius: 65%;
+border: solid 10px;
+border-color: rgb(0, 0, 0);
+border-width: medium;
+ 	
+background-color: rgb(162, 162, 162);
+}
+QPushButton:hover{
+border :5px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+qproperty-icon:url(D:/pytho willow/venda/icon/tempo.png);
+
+}</string>
+           </property>
+           <property name="text">
+            <string>ESTOQUE</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/estoque.png</normaloff>icon/estoque.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Bt_clientes">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>240</y>
+             <width>311</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ff007f;&quot;&gt;CLIENTES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border-radius: 65%;
+border: solid 10px;
+border-color: rgb(0, 0, 0);
+border-width: medium;
+ 	
+background-color: rgb(162, 162, 162);
+}
+QPushButton:hover{
+border :5px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+
+
+}</string>
+           </property>
+           <property name="text">
+            <string>CLIENTES</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/CLIENTES.png</normaloff>icon/CLIENTES.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Bt_estoque_2">
+           <property name="geometry">
+            <rect>
+             <x>730</x>
+             <y>380</y>
+             <width>151</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ff007f;&quot;&gt;CADASTRO - ESTOQUE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+
+
+qproperty-icon:url(D:/pytho willow/venda/icon/tempo.png);
+background-repeat: no-repeat;
+ width:60px;
+    height: 32px;
+}
+QPushButton:hover{
+border :5px solid ;
+
+qproperty-icon:url(D:/pytho willow/venda/icon/user_login.png);
+background-repeat: no-repeat;
+ width: 32px;
+    height: 32px;
+                             border-top-color : red; 
+                             border-left-color :pink;
+                             border-right-color :yellow;
+                             border-bottom-color : green
+}</string>
+           </property>
+           <property name="text">
+            <string>ESTOQUE</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="ok">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>240</y>
+             <width>291</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border-radius: 65%;
+border: solid 10px;
+border-color: rgb(0, 0, 0);
+border-width: medium;
+ 	
+background-color: rgb(162, 162, 162);
+}
+QPushButton:hover{
+border :5px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+
+
+}</string>
+           </property>
+           <property name="text">
+            <string>NAVEGADOR</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="email">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_cabecasistmea">
+              <property name="geometry">
+               <rect>
+                <x>240</x>
+                <y>40</y>
+                <width>401</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>25</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>SISTEMA EMAIL</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignHCenter|Qt::AlignTop</set>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_PORTA">
+              <property name="geometry">
+               <rect>
+                <x>540</x>
+                <y>400</y>
+                <width>47</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>PORTA</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_SERVIDOR">
+              <property name="geometry">
+               <rect>
+                <x>320</x>
+                <y>400</y>
+                <width>121</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>SERVIDOR SMTP</string>
+              </property>
+             </widget>
+             <widget class="QSplitter" name="splitter_2">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>320</y>
+                <width>581</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QPushButton" name="bt_ajuda">
+               <property name="font">
+                <font>
+                 <pointsize>18</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border-radius: 12%;
+border: solid 1px;
+border-color:#b4b4b4;
+	background-color: rgb(180, 180, 180);
+border-width: 2px;
+ 	
+background-color:black;
+color:white;
+}
+QPushButton:hover{
+border :6px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+
+}</string>
+               </property>
+               <property name="text">
+                <string>AJUDA/VER</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="bt_salvar">
+               <property name="font">
+                <font>
+                 <pointsize>18</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border-radius: 12%;
+border: solid 1px;
+border-color:#b4b4b4;
+	background-color: rgb(180, 180, 180);
+border-width: 2px;
+ 	
+background-color:black;
+color:white;
+}
+QPushButton:hover{
+border :6px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+
+}</string>
+               </property>
+               <property name="text">
+                <string>SALVAR</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QSplitter" name="splitter_4">
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>90</y>
+                <width>541</width>
+                <height>211</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <widget class="QSplitter" name="splitter">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <widget class="QLabel" name="label_EMAIL">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="text">
+                 <string>EMAIL</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="line_email">
+                <property name="styleSheet">
+                 <string notr="true">border-radius: 12%;
+border: solid 1px;
+border-color:#b4b4b4;
+	background-color: rgb(180, 180, 180);
+border-width: 2px;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>EMAIL</string>
+                </property>
+                <property name="cursorMoveStyle">
+                 <enum>Qt::VisualMoveStyle</enum>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="labeL_SENHA">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>SENHA</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="line_senha">
+                <property name="styleSheet">
+                 <string notr="true">border-radius: 12%;
+border: solid 1px;
+border-color:#b4b4b4;
+background-color: rgb(180, 180, 180);
+border-width: 2px;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>SENHA</string>
+                </property>
+                <property name="cursorMoveStyle">
+                 <enum>Qt::VisualMoveStyle</enum>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="font">
+                <font>
+                 <family>MS Shell Dlg 2</family>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>VISUALIZAR SENHA</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="tristate">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QSplitter" name="splitter_3">
+              <property name="geometry">
+               <rect>
+                <x>160</x>
+                <y>420</y>
+                <width>481</width>
+                <height>26</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QComboBox" name="comboBox_smtp">
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(188, 188, 188);</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_porta">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 6%;
+border: solid 1px;
+border-color:#b4b4b4;
+background-color: rgb(180, 180, 180);
+border-width: 2px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QPushButton" name="bt_caixa_email">
+              <property name="geometry">
+               <rect>
+                <x>760</x>
+                <y>430</y>
+                <width>131</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border-radius: 1%;
+border: solid 1px;
+border-color:#b4b4b4;
+	background-color: rgb(180, 180, 180);
+border-width: 1px;
+ 	
+background-color:black;
+color:white;
+}
+QPushButton:hover{
+border :1px solid ;
+ border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+ border-bottom-color : green;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>direct
+CAIXA EMAIL</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_sobre">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ff007f;&quot;&gt;SOBRE!!!!!!!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+width:300px;
+	height:100px;
+	border-radius: 6px;
+	background-color: rgb(255, 0, 127);
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/fun.png</normaloff>icon/fun.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_data_hora">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>hora</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>962</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menutela">
+    <property name="title">
+     <string>Tela</string>
+    </property>
+    <addaction name="actionestoque"/>
+    <addaction name="actionincial"/>
+    <addaction name="actionEMAIL"/>
+   </widget>
+   <addaction name="menutela"/>
+  </widget>
+  <action name="actionestoque">
+   <property name="text">
+    <string>ESTOQUE</string>
+   </property>
+  </action>
+  <action name="actionincial">
+   <property name="text">
+    <string>INICIAL</string>
+   </property>
+  </action>
+  <action name="actionEMAIL">
+   <property name="text">
+    <string>EMAIL</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
